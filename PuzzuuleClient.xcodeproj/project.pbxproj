@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B841054414ED3A790043C4A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B841054314ED3A790043C4A6 /* UIKit.framework */; };
+		B841054614ED3A790043C4A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B841054514ED3A790043C4A6 /* Foundation.framework */; };
+		B841054814ED3A790043C4A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B841054714ED3A790043C4A6 /* CoreGraphics.framework */; };
+		B841054E14ED3A790043C4A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B841054C14ED3A790043C4A6 /* InfoPlist.strings */; };
+		B841055014ED3A790043C4A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B841054F14ED3A790043C4A6 /* main.m */; };
+		B841055414ED3A790043C4A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B841055314ED3A790043C4A6 /* AppDelegate.m */; };
+		B841055714ED3A790043C4A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B841055614ED3A790043C4A6 /* ViewController.m */; };
+		B841055A14ED3A790043C4A6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B841055814ED3A790043C4A6 /* ViewController.xib */; };
+		B841056214ED3A790043C4A6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B841056114ED3A790043C4A6 /* SenTestingKit.framework */; };
+		B841056314ED3A790043C4A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B841054314ED3A790043C4A6 /* UIKit.framework */; };
+		B841056414ED3A790043C4A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B841054514ED3A790043C4A6 /* Foundation.framework */; };
+		B841056C14ED3A790043C4A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B841056A14ED3A790043C4A6 /* InfoPlist.strings */; };
+		B841056F14ED3A790043C4A6 /* PuzzuuleClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B841056E14ED3A790043C4A6 /* PuzzuuleClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B841056514ED3A790043C4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B841053614ED3A790043C4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B841053E14ED3A790043C4A6;
+			remoteInfo = PuzzuuleClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B841053F14ED3A790043C4A6 /* PuzzuuleClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzuuleClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B841054314ED3A790043C4A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B841054514ED3A790043C4A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B841054714ED3A790043C4A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B841054B14ED3A790043C4A6 /* PuzzuuleClient-Info.plist */ = {isa = PBXFileReference; path = "PuzzuuleClient-Info.plist"; sourceTree = "<group>"; };
+		B841054D14ED3A790043C4A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B841054F14ED3A790043C4A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B841055114ED3A790043C4A6 /* PuzzuuleClient-Prefix.pch */ = {isa = PBXFileReference; path = "PuzzuuleClient-Prefix.pch"; sourceTree = "<group>"; };
+		B841055214ED3A790043C4A6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B841055314ED3A790043C4A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B841055514ED3A790043C4A6 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B841055614ED3A790043C4A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B841055914ED3A790043C4A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B841056014ED3A790043C4A6 /* PuzzuuleClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzuuleClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B841056114ED3A790043C4A6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B841056914ED3A790043C4A6 /* PuzzuuleClientTests-Info.plist */ = {isa = PBXFileReference; path = "PuzzuuleClientTests-Info.plist"; sourceTree = "<group>"; };
+		B841056B14ED3A790043C4A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B841056D14ED3A790043C4A6 /* PuzzuuleClientTests.h */ = {isa = PBXFileReference; path = PuzzuuleClientTests.h; sourceTree = "<group>"; };
+		B841056E14ED3A790043C4A6 /* PuzzuuleClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzuuleClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B841053C14ED3A790043C4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B841054414ED3A790043C4A6 /* UIKit.framework in Frameworks */,
+				B841054614ED3A790043C4A6 /* Foundation.framework in Frameworks */,
+				B841054814ED3A790043C4A6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B841055C14ED3A790043C4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B841056214ED3A790043C4A6 /* SenTestingKit.framework in Frameworks */,
+				B841056314ED3A790043C4A6 /* UIKit.framework in Frameworks */,
+				B841056414ED3A790043C4A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B841053414ED3A790043C4A6 = {
+			isa = PBXGroup;
+			children = (
+				B841054914ED3A790043C4A6 /* PuzzuuleClient */,
+				B841056714ED3A790043C4A6 /* PuzzuuleClientTests */,
+				B841054214ED3A790043C4A6 /* Frameworks */,
+				B841054014ED3A790043C4A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B841054014ED3A790043C4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B841053F14ED3A790043C4A6 /* PuzzuuleClient.app */,
+				B841056014ED3A790043C4A6 /* PuzzuuleClientTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B841054214ED3A790043C4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B841054314ED3A790043C4A6 /* UIKit.framework */,
+				B841054514ED3A790043C4A6 /* Foundation.framework */,
+				B841054714ED3A790043C4A6 /* CoreGraphics.framework */,
+				B841056114ED3A790043C4A6 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B841054914ED3A790043C4A6 /* PuzzuuleClient */ = {
+			isa = PBXGroup;
+			children = (
+				B841055214ED3A790043C4A6 /* AppDelegate.h */,
+				B841055314ED3A790043C4A6 /* AppDelegate.m */,
+				B841055514ED3A790043C4A6 /* ViewController.h */,
+				B841055614ED3A790043C4A6 /* ViewController.m */,
+				B841055814ED3A790043C4A6 /* ViewController.xib */,
+				B841054A14ED3A790043C4A6 /* Supporting Files */,
+			);
+			path = PuzzuuleClient;
+			sourceTree = "<group>";
+		};
+		B841054A14ED3A790043C4A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B841054B14ED3A790043C4A6 /* PuzzuuleClient-Info.plist */,
+				B841054C14ED3A790043C4A6 /* InfoPlist.strings */,
+				B841054F14ED3A790043C4A6 /* main.m */,
+				B841055114ED3A790043C4A6 /* PuzzuuleClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B841056714ED3A790043C4A6 /* PuzzuuleClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				B841056D14ED3A790043C4A6 /* PuzzuuleClientTests.h */,
+				B841056E14ED3A790043C4A6 /* PuzzuuleClientTests.m */,
+				B841056814ED3A790043C4A6 /* Supporting Files */,
+			);
+			path = PuzzuuleClientTests;
+			sourceTree = "<group>";
+		};
+		B841056814ED3A790043C4A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B841056914ED3A790043C4A6 /* PuzzuuleClientTests-Info.plist */,
+				B841056A14ED3A790043C4A6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B841053E14ED3A790043C4A6 /* PuzzuuleClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B841057214ED3A790043C4A6 /* Build configuration list for PBXNativeTarget "PuzzuuleClient" */;
+			buildPhases = (
+				B841053B14ED3A790043C4A6 /* Sources */,
+				B841053C14ED3A790043C4A6 /* Frameworks */,
+				B841053D14ED3A790043C4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuzzuuleClient;
+			productName = PuzzuuleClient;
+			productReference = B841053F14ED3A790043C4A6 /* PuzzuuleClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B841055F14ED3A790043C4A6 /* PuzzuuleClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B841057514ED3A790043C4A6 /* Build configuration list for PBXNativeTarget "PuzzuuleClientTests" */;
+			buildPhases = (
+				B841055B14ED3A790043C4A6 /* Sources */,
+				B841055C14ED3A790043C4A6 /* Frameworks */,
+				B841055D14ED3A790043C4A6 /* Resources */,
+				B841055E14ED3A790043C4A6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B841056614ED3A790043C4A6 /* PBXTargetDependency */,
+			);
+			name = PuzzuuleClientTests;
+			productName = PuzzuuleClientTests;
+			productReference = B841056014ED3A790043C4A6 /* PuzzuuleClientTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B841053614ED3A790043C4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B841053914ED3A790043C4A6 /* Build configuration list for PBXProject "PuzzuuleClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B841053414ED3A790043C4A6;
+			productRefGroup = B841054014ED3A790043C4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B841053E14ED3A790043C4A6 /* PuzzuuleClient */,
+				B841055F14ED3A790043C4A6 /* PuzzuuleClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B841053D14ED3A790043C4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B841054E14ED3A790043C4A6 /* InfoPlist.strings in Resources */,
+				B841055A14ED3A790043C4A6 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B841055D14ED3A790043C4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B841056C14ED3A790043C4A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B841055E14ED3A790043C4A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B841053B14ED3A790043C4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B841055014ED3A790043C4A6 /* main.m in Sources */,
+				B841055414ED3A790043C4A6 /* AppDelegate.m in Sources */,
+				B841055714ED3A790043C4A6 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B841055B14ED3A790043C4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B841056F14ED3A790043C4A6 /* PuzzuuleClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B841056614ED3A790043C4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B841053E14ED3A790043C4A6 /* PuzzuuleClient */;
+			targetProxy = B841056514ED3A790043C4A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B841054C14ED3A790043C4A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B841054D14ED3A790043C4A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B841055814ED3A790043C4A6 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B841055914ED3A790043C4A6 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		B841056A14ED3A790043C4A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B841056B14ED3A790043C4A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B841057014ED3A790043C4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B841057114ED3A790043C4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B841057314ED3A790043C4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzuuleClient/PuzzuuleClient-Prefix.pch";
+				INFOPLIST_FILE = "PuzzuuleClient/PuzzuuleClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B841057414ED3A790043C4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzuuleClient/PuzzuuleClient-Prefix.pch";
+				INFOPLIST_FILE = "PuzzuuleClient/PuzzuuleClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B841057614ED3A790043C4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PuzzuuleClient.app/PuzzuuleClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzuuleClient/PuzzuuleClient-Prefix.pch";
+				INFOPLIST_FILE = "PuzzuuleClientTests/PuzzuuleClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B841057714ED3A790043C4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PuzzuuleClient.app/PuzzuuleClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzuuleClient/PuzzuuleClient-Prefix.pch";
+				INFOPLIST_FILE = "PuzzuuleClientTests/PuzzuuleClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B841053914ED3A790043C4A6 /* Build configuration list for PBXProject "PuzzuuleClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B841057014ED3A790043C4A6 /* Debug */,
+				B841057114ED3A790043C4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B841057214ED3A790043C4A6 /* Build configuration list for PBXNativeTarget "PuzzuuleClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B841057314ED3A790043C4A6 /* Debug */,
+				B841057414ED3A790043C4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B841057514ED3A790043C4A6 /* Build configuration list for PBXNativeTarget "PuzzuuleClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B841057614ED3A790043C4A6 /* Debug */,
+				B841057714ED3A790043C4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B841053614ED3A790043C4A6 /* Project object */;
+}
