@@ -53,15 +53,113 @@
     */
 }
 
-- (IBAction)execUpload
-{
-    /**
-     * path:
-     * /Users/miyabetaiji/Library/Application Support/iPhone Simulator/5.0/Applications/F9E18381-D37D-4F7D-BA5E-706C8E2516BF/Documents/
-     */
-    NSString *path = [NSString stringWithFormat:@"%@/Documents/%@", NSHomeDirectory(), @"Boston_City_Flow.jpg"];
-    [self uploadPhoto:path];
+- (NSString*)postPhoto {
+    //set url and generate request
+    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/puzzuules"];
+    //NSURL *url = [NSURL URLWithString:@"http://ec2-176-34-34-137.ap-northeast-1.compute.amazonaws.com/puzzuule/photos"];
+    ASIFormDataRequest *request = [[ASIFormDataRequest alloc] initWithURL:url];
+    //NSData *photoImage = data;
+    NSLog(@"data size = %d", [photoData length]);
+    
+    //set http parameter and multipart data
+    [request setPostValue:@"dudada.png" forKey:@"puzzuule[name]"];
+    [request setData:photoData forKey:@"puzzuule[image]"];
+    //[request setPostValue:@"test.png" forKey:@"photo[name]"];
+    //[request setData:photoImage forKey:@"content"];
+    [request setPostValue:@"json" forKey:@"format"];
+    
+    // send request
+    [request startSynchronous];
+    
+    // get reponse (json)
+    // NSString *response = [request responseString];
+    NSData *response = [request responseData];
+    //NSLog(@"response=%@", response);
+    
+    // parse joson
+    NSString *json_string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+    NSDictionary *url_dict = [json_string JSONValue];
+    NSString *dst_url = (NSString*)[url_dict objectForKey:@"p_url"];
+    NSLog(@"dsr_url = %@", dst_url);
+    
+    return dst_url;
 }
+
+- (void)showImagePicker
+{
+    // generate image picker
+    UIImagePickerController* imagePicker;
+    imagePicker = [[UIImagePickerController alloc] init];
+    [imagePicker autorelease];
+    imagePicker.allowsImageEditing = YES;
+    imagePicker.delegate = self;
+    imagePicker.sourceType = sourceType;
+    
+    // show image picker
+    [self presentModalViewController:imagePicker animated:YES];
+}
+
+- (IBAction)takePicture
+{
+    sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self showImagePicker];
+}
+
+- (IBAction)selectSavedPhoto
+{
+    //sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    [self showImagePicker];
+}
+
+- (void)convertUIImage2NSData:(UIImage*)image
+{
+    CGFloat compressionQuality = 0.8;
+    photoData = UIImageJPEGRepresentation(image, compressionQuality);
+}
+
+- (void)imagePickerController:(UIImagePickerController*)picker 
+        didFinishPickingImage:(UIImage*)image 
+                  editingInfo:(NSDictionary*)editingInfo
+{
+    // convert data from UIImage to NSData
+    photoIimage = [editingInfo objectForKey:UIImagePickerControllerOriginalImage];
+    [self convertUIImage2NSData:photoIimage];
+    [self postPhoto];
+    
+    // show confirmation dialog
+    UIAlertView *alert = [[UIAlertView alloc] init];
+    alert.delegate = self;
+    alert.title = @"Confirm";
+    alert.message = @"Register your photo to Puzzuule？";
+    [alert addButtonWithTitle:@"ok"];
+    [alert addButtonWithTitle:@"cancel"];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView*)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
+    NSLog(@"data size = %d", [photoData length]);
+    if (buttonIndex == 0) {
+        
+        //NSString * aaa = [self postPhoto];
+        //[self postPhoto:photoData];
+        //[self doPost:originalImage];
+    } else {
+        [self showImagePicker];
+    }
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController*)picker
+{
+    // イメージピッカーを隠す
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -74,7 +172,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload

@@ -10,7 +10,10 @@
 
 @interface ViewController : UIViewController
 {
-    
+    UIImagePickerControllerSourceType sourceType;
+    UIImage* photoIimage;
+    NSData* photoData;
 }
-- (IBAction)execUpload;
+- (IBAction)takePicture;
+- (IBAction)selectSavedPhoto;
 @end

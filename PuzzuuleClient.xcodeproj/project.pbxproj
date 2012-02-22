@@ -158,6 +158,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B828CCB914F3E6A30010A82F /* ASIHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				B841059A14ED4B870043C4A6 /* ASIDataCompressor.m */,
+				B841059414ED3C010043C4A6 /* Reachability.h */,
+				B841059514ED3C010043C4A6 /* Reachability.m */,
+				B841057814ED3BEE0043C4A6 /* ASIAuthenticationDialog.h */,
+				B841057914ED3BEE0043C4A6 /* ASIAuthenticationDialog.m */,
+				B841057A14ED3BEE0043C4A6 /* ASICacheDelegate.h */,
+				B841057D14ED3BEE0043C4A6 /* ASIDataDecompressor.h */,
+				B841057E14ED3BEE0043C4A6 /* ASIDataDecompressor.m */,
+				B841057F14ED3BEE0043C4A6 /* ASIDownloadCache.h */,
+				B841058014ED3BEE0043C4A6 /* ASIDownloadCache.m */,
+				B841058114ED3BEE0043C4A6 /* ASIFormDataRequest.h */,
+				B841058214ED3BEE0043C4A6 /* ASIFormDataRequest.m */,
+				B841058314ED3BEE0043C4A6 /* ASIHTTPRequest.h */,
+				B841058414ED3BEE0043C4A6 /* ASIHTTPRequest.m */,
+				B841058514ED3BEE0043C4A6 /* ASIHTTPRequestConfig.h */,
+				B841058614ED3BEE0043C4A6 /* ASIHTTPRequestDelegate.h */,
+				B841058714ED3BEE0043C4A6 /* ASIInputStream.h */,
+				B841058814ED3BEE0043C4A6 /* ASIInputStream.m */,
+				B841058914ED3BEE0043C4A6 /* ASINetworkQueue.h */,
+				B841058A14ED3BEE0043C4A6 /* ASINetworkQueue.m */,
+				B841058B14ED3BEE0043C4A6 /* ASIProgressDelegate.h */,
+				B841059914ED4B870043C4A6 /* ASIDataCompressor.h */,
+				B8F4A86B14EFC4D700FABC43 /* NSObject+SBJson.h */,
+			);
+			name = ASIHTTP;
+			sourceTree = "<group>";
+		};
 		B841053414ED3A790043C4A6 = {
 			isa = PBXGroup;
 			children = (
@@ -195,29 +225,8 @@
 		B841054914ED3A790043C4A6 /* PuzzuuleClient */ = {
 			isa = PBXGroup;
 			children = (
-				B841059914ED4B870043C4A6 /* ASIDataCompressor.h */,
+				B828CCB914F3E6A30010A82F /* ASIHTTP */,
 				B8F4A86914EFC48F00FABC43 /* JSON */,
-				B841059A14ED4B870043C4A6 /* ASIDataCompressor.m */,
-				B841059414ED3C010043C4A6 /* Reachability.h */,
-				B841059514ED3C010043C4A6 /* Reachability.m */,
-				B841057814ED3BEE0043C4A6 /* ASIAuthenticationDialog.h */,
-				B841057914ED3BEE0043C4A6 /* ASIAuthenticationDialog.m */,
-				B841057A14ED3BEE0043C4A6 /* ASICacheDelegate.h */,
-				B841057D14ED3BEE0043C4A6 /* ASIDataDecompressor.h */,
-				B841057E14ED3BEE0043C4A6 /* ASIDataDecompressor.m */,
-				B841057F14ED3BEE0043C4A6 /* ASIDownloadCache.h */,
-				B841058014ED3BEE0043C4A6 /* ASIDownloadCache.m */,
-				B841058114ED3BEE0043C4A6 /* ASIFormDataRequest.h */,
-				B841058214ED3BEE0043C4A6 /* ASIFormDataRequest.m */,
-				B841058314ED3BEE0043C4A6 /* ASIHTTPRequest.h */,
-				B841058414ED3BEE0043C4A6 /* ASIHTTPRequest.m */,
-				B841058514ED3BEE0043C4A6 /* ASIHTTPRequestConfig.h */,
-				B841058614ED3BEE0043C4A6 /* ASIHTTPRequestDelegate.h */,
-				B841058714ED3BEE0043C4A6 /* ASIInputStream.h */,
-				B841058814ED3BEE0043C4A6 /* ASIInputStream.m */,
-				B841058914ED3BEE0043C4A6 /* ASINetworkQueue.h */,
-				B841058A14ED3BEE0043C4A6 /* ASINetworkQueue.m */,
-				B841058B14ED3BEE0043C4A6 /* ASIProgressDelegate.h */,
 				B841055214ED3A790043C4A6 /* AppDelegate.h */,
 				B841055314ED3A790043C4A6 /* AppDelegate.m */,
 				B841055514ED3A790043C4A6 /* ViewController.h */,
@@ -261,7 +270,6 @@
 		B8F4A86914EFC48F00FABC43 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				B8F4A86B14EFC4D700FABC43 /* NSObject+SBJson.h */,
 				B8F4A86C14EFC4D700FABC43 /* NSObject+SBJson.m */,
 				B8F4A86D14EFC4D700FABC43 /* SBJson.h */,
 				B8F4A86E14EFC4D700FABC43 /* SBJsonParser.h */,
